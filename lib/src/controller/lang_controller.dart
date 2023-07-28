@@ -45,7 +45,9 @@ class LanguageController {
     }
   }
   void showList() {
+    print("---------------------------------------------------");
     categories.forEach(print);
+    print("---------------------------------------------------");
   }
 
   @override

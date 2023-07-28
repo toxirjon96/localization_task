@@ -8,13 +8,14 @@ class LocalizationLogic {
   void call() {
     io.write("\n\n\n\t\tLocalization\n\n");
     while (true) {
-      int choice = io.readInt(
-        "Tilni tanlang"
+      io.writeln(
+        "Til"
         "\n1.O'zbek tili"
         "\n2.Ingliz tili"
         "\n3.Rus tili"
-        "0. Dasturdan chiqish",
+        "\n0. Dasturdan chiqish",
       );
+      int choice = io.readInt("Tillardan birini tanlang:");
       if (choice == 0) break;
 
       switch (choice) {
