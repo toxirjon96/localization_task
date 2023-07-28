@@ -44,4 +44,21 @@ class LanguageController {
         }
     }
   }
+  void showList() {
+    categories.forEach(print);
+  }
+
+  @override
+  bool operator ==(Object other) =>
+      other is LanguageController &&
+      other.categories == categories &&
+      other.lang == lang;
+
+  @override
+  int get hashCode => Object.hash(lang, categories);
+
+  @override
+  String toString() {
+    return "$runtimeType{lang:$lang, categories:$categories}";
+  }
 }
