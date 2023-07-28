@@ -4,11 +4,13 @@ class IOService implements IORepostory {
   const IOService();
   @override
   String read(String info) {
+    write(info);
     return stdin.readLineSync() ?? "";
   }
 
   @override
   int readInt(String info) {
+    write(info);
     return int.tryParse(stdin.readLineSync() ?? "") ?? 0;
   }
 
