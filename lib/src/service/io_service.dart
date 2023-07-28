@@ -1,6 +1,7 @@
 import 'package:localization/localization_library.dart';
 
 class IOService implements IORepostory {
+  const IOService();
   @override
   String read(String info) {
     return stdin.readLineSync() ?? "";
