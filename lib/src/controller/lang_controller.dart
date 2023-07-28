@@ -55,6 +55,12 @@ class LanguageController {
       other.lang == lang;
 
   @override
+  noSuchMethod(Invocation invocation) {
+    print("Bunday method yoki property mavjud emas!");
+    return;
+  }
+
+  @override
   int get hashCode => Object.hash(lang, categories);
 
   @override
